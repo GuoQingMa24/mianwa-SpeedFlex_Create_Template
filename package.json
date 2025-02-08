@@ -1,0 +1,28 @@
+{
+  "name": "speedcreate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": "/src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup",
+    "dev": "speedcreate create app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+
+
+
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0",
+    "degit": "^2.8.4",
+    "figlet": "^1.8.0",
+    "fs-extra": "^11.3.0",
+    "inquirer": "^12.4.1",
+    "ora": "^8.2.0",
+    "path": "^0.12.7"
+  }
+}
