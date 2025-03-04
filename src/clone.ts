@@ -1,5 +1,6 @@
-import degit from 'degit'
+import degit from 'types/degit';
 import chalk from 'chalk';
+
 async function clone(cache: boolean, force: boolean, targetPath: string, source1: string) {
     const emitter = degit(source1, {
         force,
@@ -7,7 +8,7 @@ async function clone(cache: boolean, force: boolean, targetPath: string, source1
     });
 
     emitter.on('info', info => {
-        console.log(chalk.yellow('开始Clone！', info.message));
+        console.log(chalk.yellow('message: ${info.message}'));
     });
 
     try {
