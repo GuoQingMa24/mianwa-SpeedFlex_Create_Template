@@ -1,6 +1,5 @@
-import degit from '../types/degit';
+import degit from 'degit'
 import chalk from 'chalk';
-
 async function clone(cache: boolean, force: boolean, targetPath: string, source1: string) {
     const emitter = degit(source1, {
         force,
