@@ -12,9 +12,6 @@
   "author": "",
   "license": "ISC",
   "description": "",
-
-
-
   "dependencies": {
     "chalk": "^5.4.1",
     "commander": "^13.1.0",
@@ -23,6 +20,7 @@
     "fs-extra": "^11.3.0",
     "inquirer": "^12.4.1",
     "ora": "^8.2.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "pnpm": "^10.5.2"
   }
 }
