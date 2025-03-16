@@ -7,7 +7,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsup",
-    "dev": "npm run build&&node dist/index.js create app"
+    "dev": "npm run build&&node dist/index.js create app",
+    "format": "prettier --write .",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
   },
   "keywords": [],
   "author": "",
@@ -32,6 +34,10 @@
     "@types/chalk": "^0.4.31",
     "@types/degit": "^2.8.6",
     "@types/fs-extra": "^11.0.4",
-    "@types/node": "^22.13.9"
+    "@types/node": "^22.13.9",
+    "eslint": "^9.22.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "prettier": "^3.5.3"
   }
 }
