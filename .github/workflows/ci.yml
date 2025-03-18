@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 name: CI for speed-create
 on:
   push:
@@ -18,3 +19,25 @@ jobs:
         run: npm run build
       - name: Test cloning
         run: npx . create test-app --type vue-lint-vitesse-lite --cache1 false --force1 true
+=======
+name: CI for speed-create
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: Test cloning
+        run: npx . create test-app --type vue-lint-vitesse-lite --cache1 false --force1 true
+>>>>>>> cb8a3c7f7bad15c92f0e0d35c1d7e207839d3e40
